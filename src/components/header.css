@@ -1,0 +1,131 @@
+.Header {
+    background-color: #242526;
+    width: 100%;
+    height: 55px;
+    border-bottom: 2px solid #3e4042;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.formSearch {
+    display: block;
+    margin: 0 auto;
+}
+
+.formSearch label {
+    position: absolute;
+    left: -99999px;
+}
+
+#search {
+    border-radius: 30px;
+    height: 35px;
+    width: 500px;
+    background-color: #3a3b3c;
+    border: none;
+    padding-left: 20px;
+}
+
+#search:hover {
+    background-color: #48494b;
+}
+
+#search::placeholder {
+    font-size: 16px;
+    color: #b0b3b8;
+}
+
+#search:focus {
+    outline: none;
+}
+
+.containerButtonsHeader {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.messenger {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #3a3b3c;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bell {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #3a3b3c;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.messenger:hover {
+    background-color: #515253;
+}
+
+.bell:hover {
+    background-color: #515253;
+}
+
+.profile {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profile img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile img:hover {
+    opacity: 0.8;
+}
+
+.messenger svg {
+    width: 18px;
+    height: 18px;
+    color: #b0b3b8;
+}
+
+.bell svg {
+    width: 18px;
+    height: 18px;
+    color: #b0b3b8;
+}
+
+.profile svg {
+    color: #b0b3b8;
+    z-index: 11;
+    width: 10px;
+}
+
+.profileArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    background-color: #3a3b3c;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: -15px;
+    z-index: 11;
+}
