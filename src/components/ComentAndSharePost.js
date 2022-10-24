@@ -8,7 +8,7 @@ const ComentAndSharePost = () => {
     <div className='containerComentAndShare'>
       <div className='containerComent'>
         <div className="likes">
-            <SlLike /><h4>33 likes</h4>
+            <SlLike /><h4>33</h4>
         </div>
       
         <div className="coments">

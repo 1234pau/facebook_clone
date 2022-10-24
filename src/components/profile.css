@@ -6,23 +6,3 @@
     margin-right: auto;
     margin-top: -580px;
 }
-
-.Modal {
-    width: calc(100vw - 65px);
-    height: 90.8%;
-    background-color: rgba(0, 0, 0, 0.767);
-    top: 57px;
-    left: 65px;
-    z-index: 2;
-    position: absolute;
-}
-
-.containerModal {
-    width: 47%;
-    height: 90.8%;
-    background-color: #3a3b3c;
-    top: 56px;
-    left: 63px;
-    z-index: 3;
-    position: absolute;
-}

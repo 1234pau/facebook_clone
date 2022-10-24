@@ -1,4 +1,4 @@
-import './profile.css'
+import './modals.css'
 import  ReactDOM  from 'react-dom'
 
 const Modal = ({handleClose}) => {
@@ -8,7 +8,9 @@ const Modal = ({handleClose}) => {
       <div className='Modal' onClick={handleClose}></div>
         
         <div className='containerModal'  >
-          <h3>This is a modal</h3>
+          {/* <Recent /> */}
+          {/* <OptionsModalMenu /> */}
+          {/* <ListModalMenu /> */}
 
         </div>
       
