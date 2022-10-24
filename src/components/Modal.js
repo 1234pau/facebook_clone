@@ -1,13 +1,20 @@
 import './profile.css'
+import  ReactDOM  from 'react-dom'
 
-const Modal = () => {
-  return (
-    <div className='Modal'>
-      <div className='containerModal'>
-        <h3>This is a modal</h3>
+const Modal = ({handleClose}) => {
 
-      </div>
+  return ReactDOM.createPortal(
+    <div>
+      <div className='Modal' onClick={handleClose}></div>
+        
+        <div className='containerModal'  >
+          <h3>This is a modal</h3>
+
+        </div>
+      
     </div>
+    ,
+    document.getElementById('portal1')
   )
 }
 
