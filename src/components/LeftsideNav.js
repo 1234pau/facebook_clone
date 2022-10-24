@@ -10,55 +10,68 @@ import { HiUsers } from "react-icons/hi2";
 import { HiFilm } from "react-icons/hi2";
 import { HiBuildingStorefront } from "react-icons/hi2";
 import './linksNav.css'
+import { useState } from "react";
+import Modal from "./Modal";
+import './profile.css'
 
 const LeftsideNav = () => {
+
+  const [active, setActive] = useState(true)
+
+  const handleNav =()=>{
+    setActive( !active)
+    console.log(active)
+  }
+
   return (
-    <div className="containerLinks">
+    
+      
+      <div className="containerLinks"style={active ? {width: "280px"}: { width: "65px" ? '&::-webkit-scrollbar': { visibility: 'hidden' }} }>
+        {!active && <Modal />}
       <ul>
-        <li>
+        <li >
           <Link to="/">
             <TiHome/>
-            <h4>Home</h4>
+            {active && <h4>Home</h4>}
           </Link>
         </li>
         <li className="marginBottom">
           <Link to="profile">
             <img className="imageProfile" style={{width: '25px'}} src={image} alt="profile_image" />
-            <h4>User Name</h4> 
+            {active && <h4>UserName</h4>}
           </Link>
         </li>
 
-        <div className="containerButton">
+        <div className="containerButton" onClick={handleNav} >
           <HiBars4 role='button' className="button"/>
-          
         </div>
         
         <li>
           <Link to="/friends">
             <HiUsers/>
-            <h4>Friends</h4>
+            {active && <h4>Friends</h4>}
           </Link>
         </li>
         <li>
           <Link to="/watch">
             <HiFilm/>
-            <h4>Watch</h4>
+            {active && <h4>Watch</h4>}
           </Link>
         </li>
         <li>
           <Link to="/marketplace">
             <HiBuildingStorefront/>
-            <h4>Marketplace</h4>
+            {active && <h4>Marketplace</h4>}
           </Link>
         </li>
         <li className="marginBottom">
           <Link to="/gaming">
             <FaGamepad/>
-            <h4>Gaming</h4>
+            {active && <h4>Gaming</h4>}
           </Link>
         </li>
 
-        <div className="containerButton">
+        <div className="containerButton" >
           <FaUsers role='button' className="button"/>
           
         </div>
@@ -66,23 +79,23 @@ const LeftsideNav = () => {
         <li>
           <Link to="/gaming">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
-            <h4>Gaming</h4>
+          {active && <h4>Gaming</h4>}
           </Link>
         </li>
         <li>
           <Link to="/gaming">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
-            <h4>Gaming</h4>
+          {active && <h4>Gaming</h4>}
           </Link>
         </li>
         <li className="marginBottom">
           <Link to="/gaming">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
-            <h4>Gaming</h4>
+          {active && <h4>Gaming</h4>}
           </Link>
         </li>
 
-        <div className="containerButton">
+        <div className="containerButton" >
           <FaLink role='button'className="button"/>
           
         </div>
@@ -90,23 +103,25 @@ const LeftsideNav = () => {
         <li>
           <Link to="/gaming">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
-            <h4>Gaming</h4>
+          {active && <h4>Gaming</h4>}
           </Link>
         </li>
         <li>
           <Link to="/gaming">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
-            <h4>Gaming</h4>
+          {active && <h4>Gaming</h4>}
           </Link>
         </li>
         <li>
           <Link to="/gaming">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
-            <h4>Gaming</h4>
+          {active && <h4>Gaming</h4>}
           </Link>
         </li>
       </ul>
     </div>
+   
+     
     
   )
 }

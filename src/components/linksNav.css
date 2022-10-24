@@ -2,6 +2,7 @@
     width: 280px;
     height: 93%;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 ul li a {

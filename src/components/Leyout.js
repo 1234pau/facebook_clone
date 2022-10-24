@@ -8,6 +8,7 @@ const Leyout = () => {
       <Header />
       <LeftsideNav />
       <Outlet />
+      
     </div>
   )
 }
