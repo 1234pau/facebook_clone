@@ -34,7 +34,7 @@ const LeftsideNav = () => {
       <div className="containerLinks" style={active ? {width: "280px"}: { width: "65px" ? '&::-webkit-scrollbar': { visibility: 'hidden' }} } >
         
       <ul>
-        <li >
+        <li onClick={()=> setActive(true)}>
           <Link to="/">
             <TiHome/>
             {active && <h4>Home</h4>}
