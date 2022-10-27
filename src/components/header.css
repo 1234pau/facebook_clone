@@ -1,3 +1,7 @@
+:root {
+    --svgAndTextColor: #e4e6eb;
+}
+
 .Header {
     background-color: #242526;
     width: 100%;
@@ -102,17 +106,17 @@
 .messenger svg {
     width: 18px;
     height: 18px;
-    color: #b0b3b8;
+    color: var(--svgAndTextColor);
 }
 
 .bell svg {
     width: 18px;
     height: 18px;
-    color: #b0b3b8;
+    color: var(--svgAndTextColor);
 }
 
 .profile svg {
-    color: #b0b3b8;
+    color: var(--svgAndTextColor);
     z-index: 11;
     width: 10px;
 }

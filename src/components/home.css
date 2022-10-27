@@ -1,3 +1,7 @@
+:root {
+    --svgAndTextColor: #e4e6eb;
+}
+
 .Home::-webkit-scrollbar {
     width: 8px;
 }
@@ -51,7 +55,7 @@
     text-align: center;
     padding-top: 20px;
     font-weight: 400;
-    color: #b0b3b8;
+    color: var(--svgAndTextColor);
 }
 
 .stories {
@@ -89,7 +93,7 @@
 .containerStory h4 {
     margin-top: 130px;
     margin-left: 10px;
-    color: white;
+    color: var(--svgAndTextColor);
     font-size: 11px;
 }
 
@@ -166,7 +170,7 @@ hr {
 }
 
 .containerState div h4 {
-    color: #b0b3b8;
+    color: var(--svgAndTextColor);
     margin-left: 7px;
 }
 
@@ -198,7 +202,7 @@ hr {
 }
 
 .topPost svg {
-    color: #b0b3b8;
+    color: var(--svgAndTextColor);
     font-size: 30px;
     cursor: pointer;
 }
@@ -212,13 +216,13 @@ hr {
 .textP h3 {
     font-size: 15px;
     font-weight: 400;
-    color: white;
+    color: var(--svgAndTextColor);
 }
 
 .textP p {
     font-size: 12px;
     font-weight: 300;
-    color: #b0b3b8;
+    color: var(--svgAndTextColor);
     opacity: 0.9;
 }
 
@@ -235,7 +239,7 @@ hr {
     justify-content: space-between;
     margin: 0 10px;
     padding: 8px;
-    color: #b0b3b8;
+    color: var(--svgAndTextColor);
     opacity: 0.9;
     font-size: 13px;
 }
@@ -269,7 +273,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #b0b3b8;
+    color: var(--svgAndTextColor);
     width: 25%;
     padding: 10px;
     cursor: pointer;

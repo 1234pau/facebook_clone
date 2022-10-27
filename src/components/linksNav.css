@@ -1,3 +1,7 @@
+:root {
+    --svgAndTextColor: #e4e6eb;
+}
+
 .containerLinks {
     width: 280px;
     height: 93%;
@@ -7,7 +11,7 @@
 
 ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--svgAndTextColor);
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -41,7 +45,7 @@ h4 {
 
 ul {
     list-style-type: none;
-    color: white;
+    color: var(--svgAndTextColor);
     padding: 10px;
 }
 
@@ -63,7 +67,7 @@ ul {
 }
 
 .containerButton svg {
-    color: white;
+    color: var(--svgAndTextColor);
 }
 
 .marginBottom {

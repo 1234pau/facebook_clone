@@ -1,3 +1,7 @@
+:root {
+    --svgAndTextColor: #e4e6eb;
+}
+
 .Modal {
     width: calc(100vw - 65px);
     height: 90.8%;
@@ -20,7 +24,7 @@
 
 .containerModal h2 {
     margin-left: 15px;
-    color: #b0b3b8;
+    color: var(--svgAndTextColor);
     padding-top: 15px;
     margin-bottom: -5px;
 }
@@ -71,7 +75,7 @@
 /* scrol bar***************************************************/
 
 .iconsModalRecent h3 {
-    color: white;
+    color: var(--svgAndTextColor);
     font-size: 16px;
     font-weight: 400;
     padding: 15px 20px;
@@ -102,7 +106,7 @@
 }
 
 .listRecent div h4 {
-    color: white;
+    color: var(--svgAndTextColor);
     font-size: 12px;
 }
 
@@ -160,7 +164,7 @@
 
 .optionListComp h2 {
     font-size: 18px;
-    color: white;
+    color: var(--svgAndTextColor);
     padding: 10px 0;
 }
 
@@ -173,15 +177,62 @@ hr {
 }
 
 .containerOptionsIcons .optionListComp .listOption h4 {
-    color: white;
+    color: var(--svgAndTextColor);
     font-size: 13px;
     font-weight: 500;
     margin-left: -30px;
 }
 
 .containerOptionsIcons .optionListComp .listOption p {
-    color: rgb(214, 213, 213);
+    color: var(--svgAndTextColor);
+    opacity: 0.7;
     font-size: 11px;
     font-weight: 300;
     margin-left: -30px;
+}
+
+.containerListModalMenu {
+    margin: 0 auto;
+}
+
+.containerListModalMenu h3 {
+    color: var(--svgAndTextColor);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.itemList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px auto;
+    padding: 5px;
+    width: 85%;
+}
+
+.itemList:hover {
+    background-color: #6263664d;
+    border-radius: 10px;
+}
+
+.itemList div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #545557;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.itemList div svg {
+    color: var(--svgAndTextColor);
+    font-size: 18px;
+}
+
+.itemList p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--svgAndTextColor);
 }
