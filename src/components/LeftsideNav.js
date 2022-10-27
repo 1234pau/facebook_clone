@@ -12,7 +12,7 @@ import { HiBuildingStorefront } from "react-icons/hi2";
 import './linksNav.css'
 import { useState } from "react";
 import Modal from "./Modal";
-import './profile.css'
+
 
 const LeftsideNav = () => {
 

@@ -2,15 +2,19 @@ import "./home.css"
 import ContainerStories from './ContainerStories'
 import FormSection from './FormSection'
 import PostSection from './PostSection'
+import MessageSection from './MessageSection'
 
 
-const LeftsideNavBar = ({active}) => {
+const LeftsideNavBar = () => {
   return (
     <div className='Home'>
-     
-      <ContainerStories />
+      <div className="home">
+        <ContainerStories />
       <FormSection />
       <PostSection />
+      </div>
+      
+      <MessageSection />
       
     </div>
   )

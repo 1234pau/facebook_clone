@@ -27,22 +27,25 @@
 /* scrol bar */
 
 .Home {
-    /* border: 1px solid red;*/
-    width: 50%;
+    width: 79%;
     height: 92%;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: -580px;
     overflow-y: scroll;
+    float: right;
 }
 
+
+/* .home {
+    overflow-y: auto;
+} */
+
 .containerStories {
-    width: 80%;
+    width: 50%;
     height: 300px;
     background-color: #242526;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 120px;
+    margin-top: 20px;
 }
 
 .containerTitle {
@@ -63,10 +66,6 @@
     align-items: center;
     justify-content: space-around;
     overflow-x: scroll;
-    margin-top: 20px;
-}
-
-.containerStories {
     margin-top: 20px;
 }
 
@@ -98,12 +97,11 @@
 }
 
 .containerForm {
-    width: 80%;
+    width: 50%;
     height: fit-content;
     background-color: #242526;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 120px;
     margin-top: 20px;
 }
 
@@ -183,12 +181,11 @@ hr {
 /* post container*/
 
 .containerPost {
-    width: 80%;
+    width: 50%;
     height: fit-content;
     background-color: #242526;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 120px;
     margin-top: 20px;
     /* margin-bottom: 50px; trebuie sters la sfarsit*/
 }
@@ -287,4 +284,49 @@ hr {
 .containerIconsComent div svg {
     margin-right: 10px;
     font-size: 17px;
+}
+
+.messageContainer {
+    float: right;
+    width: 300px;
+    height: 100%;
+    margin-top: -1050px;
+    right: 0;
+    overflow-y: auto;
+    position: fixed;
+}
+
+.messageContainer h3 {
+    color: var(--svgAndTextColor);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0 10px 20px;
+}
+
+.containerMessages ul {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+.containerMessages ul:hover {
+    background-color: #6263664d;
+    border-radius: 10px;
+}
+
+.containerMessages ul li {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.containerMessages ul div {
+    border-radius: 50px;
+    border: 2px solid blue;
+    width: 25px;
+    height: 25px;
+}
+
+.containerMessages ul li:hover {
+    background-color: transparent;
 }
