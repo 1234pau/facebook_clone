@@ -191,9 +191,7 @@ hr {
 }
 
 .topPost {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
     margin: 0;
     padding: 10px;
 }
@@ -202,6 +200,19 @@ hr {
     color: var(--svgAndTextColor);
     font-size: 30px;
     cursor: pointer;
+}
+
+.containerTopPost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.messageCon {
+    padding: 10px 0;
+    color: var(--svgAndTextColor);
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .topPostImage {

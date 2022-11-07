@@ -6,7 +6,11 @@ import './home.css'
 const PostSection = () => {
   return (
     <div className='containerPost'>
-      <TopPost />
+      <TopPost
+        name = 'Paul'
+        timestamp='something'
+        message='This is a message'
+      />
       <ImagePost />
       <ComentAndSharePost />
     </div>

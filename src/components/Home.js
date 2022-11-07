@@ -10,12 +10,10 @@ const LeftsideNavBar = () => {
     <div className='Home'>
       <div className="home">
         <ContainerStories />
-      <FormSection />
-      <PostSection />
+        <FormSection />
+        <PostSection />
       </div>
-      
       <MessageSection />
-      
     </div>
   )
 }
