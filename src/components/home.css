@@ -105,6 +105,28 @@
     margin-top: 20px;
 }
 
+.buttonPost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 0px 10px;
+}
+
+.buttonPost p {
+    border-radius: 30px;
+    height: 35px;
+    width: 85%;
+    background-color: #4445469a;
+    color: #b0b3b8;
+    padding: 5px 5px 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.buttonPost p:hover {
+    background-color: #525455b6;
+}
+
 .containerInput form label {
     position: absolute;
     left: -99999px;
@@ -211,8 +233,8 @@ hr {
 .messageCon {
     padding: 10px 0;
     color: var(--svgAndTextColor);
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 200;
 }
 
 .topPostImage {
@@ -228,13 +250,13 @@ hr {
 }
 
 .textP p {
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 11px;
+    font-weight: 200;
     color: var(--svgAndTextColor);
     opacity: 0.9;
 }
 
-.containerImagePost img {
+.postImage {
     width: 100%;
 }
 
@@ -301,8 +323,9 @@ hr {
     float: right;
     width: 300px;
     height: 100%;
-    margin-top: -1050px;
     right: 0;
+    margin-top: 60px;
+    top: 0;
     overflow-y: auto;
     position: fixed;
 }

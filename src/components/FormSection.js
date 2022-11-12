@@ -1,17 +1,33 @@
-import image from './images/abstract-user-flat-4.svg'
 import { MdSentimentVerySatisfied } from "react-icons/md";
 import { HiOutlineVideoCamera } from "react-icons/hi2";
 import { MdOutlinePhotoLibrary } from "react-icons/md";
 import './home.css'
+import { useStateValue } from "../StateProvider"
+import image from './images/abstract-user-flat-4.svg'
+import { useState } from "react";
+import ModalPost from "./ModalPost";
+
 const FormSection = () => {
+  const [{user}, dispatch]=useStateValue()
+  const [active, setActive] = useState(true)
+
+const handleModalPost = ()=>{
+  setActive(false)
+}
+const handleClose =()=>{
+  setActive(!active)
+  console.log('Modal close')
+  
+}
+  
   return (
     <div className='containerForm'>
-      <div className='containerInput'>
-        <img className="imageProfile" style={{width: '45px'}} src={image} alt="profile_image" />
-        <form onSubmit={e => e.preventDefault()}>
-          <label htmlFor="postForm">What is on your mind ?</label>
-          <input type="text" placeholder='What is on your mind ?' id='postForm'/>
-        </form>
+      <div className='buttonPost'>
+          <img className="imageProfile" style={{width: '45px'}} src={user ? user.photoURL : image} alt="profile_image" referrerpolicy="no-referrer"/>
+        <p onClick={handleModalPost}>
+          What is on your mind {user.displayName}?
+        </p>
+        {!active && <ModalPost handleClose={handleClose}/>}
       </div>
       <hr />
       <div className='containerState'>

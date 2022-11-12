@@ -1,10 +1,15 @@
-import image2 from './images/mathilde-paret-7shTDDZ_Bug-unsplash.jpg'
+//import image2 from './images/mathilde-paret-7shTDDZ_Bug-unsplash.jpg'
 import './home.css'
 
-const ImagePost = () => {
+
+const ImagePost = ({postImage}) => {
+  
+
   return (
     <main className='containerImagePost'>
-      <img className="imageProfile" src={image2} alt="profile_image" />
+      
+      {postImage && <img className="postImage" src={postImage} alt="profile_image" />}
+      
     </main>
   )
 }

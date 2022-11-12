@@ -236,3 +236,154 @@ hr {
     font-weight: 500;
     color: var(--svgAndTextColor);
 }
+
+.containerModalPostBackground {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.767);
+    top: 0;
+    right: 0;
+    z-index: 11;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerPostModal {
+    width: 35%;
+    height: auto;
+    block-size: fit-content;
+    padding: 10px 0;
+    background-color: #242526;
+    border-radius: 10px;
+    border: 1px solid #3e4042;
+}
+
+.titlePostModal {
+    border-bottom: 1px solid #3e4042;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.titlePostModal p {
+    background-color: transparent;
+    margin-left: 160px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #e4e6eb;
+}
+
+.titlePostModal p:hover {
+    background-color: transparent;
+}
+
+.titlePostModal div {
+    background-color: #3e4042;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.titlePostModal div:hover {
+    background-color: #4e4e4e;
+}
+
+.titlePostModal div svg {
+    color: var(--svgAndTextColor);
+    font-size: 35px;
+}
+
+.containerImagePostModal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.containerImagePostModal img {
+    border-radius: 50%;
+}
+
+.containerImagePostModal h4 {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.label1 {
+    position: absolute;
+    left: -99999px;
+}
+
+.formPostModal {
+    display: flex;
+    flex-direction: column;
+}
+
+.formPostModal textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+    margin: 0 auto;
+    resize: none;
+}
+
+.formPostModal input[type=submit] {
+    width: 95%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2374e1;
+    font-size: 14px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.formPostModal textarea:focus {
+    outline: none !important;
+}
+
+.label2 input {
+    display: none;
+}
+
+.label2 {
+    border: 1px solid #3e4042;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 70px;
+    width: 95%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.label2 svg {
+    margin-left: auto;
+    margin-right: auto;
+    color: #676869;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.removeEffect:hover {
+    opacity: 0.6;
+}

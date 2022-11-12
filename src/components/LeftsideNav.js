@@ -12,10 +12,10 @@ import { HiBuildingStorefront } from "react-icons/hi2";
 import './linksNav.css'
 import { useState } from "react";
 import Modal from "./Modal";
-
+import { useStateValue } from "../StateProvider"
 
 const LeftsideNav = () => {
-
+  const [{user}, dispatch]=useStateValue()
   const [active, setActive] = useState(true)
 
   const handleNav =()=>{
@@ -42,8 +42,8 @@ const LeftsideNav = () => {
         </li>
         <li className="marginBottom" onClick={()=> setActive(true)}>
           <Link to="profile">
-            <img className="imageProfile" style={{width: '25px'}} src={image} alt="profile_image" />
-            {active && <h4>UserName</h4>}
+            <img className="imageProfile" style={{width: '30px'}} src={user ? user.photoURL : image} alt="profile_image" referrerpolicy="no-referrer"/>
+            {active && <h4 className="name">{user.displayName}</h4>}
           </Link>
         </li>
 
