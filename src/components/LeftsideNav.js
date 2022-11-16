@@ -52,25 +52,25 @@ const LeftsideNav = () => {
         </div>
         {!active && <Modal handleClose={handleClose}  />}
         <li onClick={()=> setActive(true)}>
-          <Link to="/friends">
+          <Link to="">
             <HiUsers/>
             {active && <h4>Friends</h4>}
           </Link>
         </li>
         <li onClick={()=> setActive(true)}>
-          <Link to="/watch">
+          <Link to="">
             <HiFilm/>
             {active && <h4>Watch</h4>}
           </Link>
         </li>
         <li onClick={()=> setActive(true)}>
-          <Link to="/marketplace">
+          <Link to="">
             <HiBuildingStorefront/>
             {active && <h4>Marketplace</h4>}
           </Link>
         </li>
         <li className="marginBottom" onClick={()=> setActive(true)}>
-          <Link to="/gaming">
+          <Link to="">
             <FaGamepad/>
             {active && <h4>Gaming</h4>}
           </Link>
@@ -82,19 +82,19 @@ const LeftsideNav = () => {
         </div>
         
         <li onClick={()=> setActive(true)}>
-          <Link to="/gaming">
+          <Link to="">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
           {active && <h4>Gaming</h4>}
           </Link>
         </li>
         <li onClick={()=> setActive(true)}>
-          <Link to="/gaming">
+          <Link to="">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
           {active && <h4>Gaming</h4>}
           </Link>
         </li>
         <li className="marginBottom" onClick={()=> setActive(true)}>
-          <Link to="/gaming">
+          <Link to="">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
           {active && <h4>Gaming</h4>}
           </Link>
@@ -106,19 +106,19 @@ const LeftsideNav = () => {
         </div>
 
         <li onClick={()=> setActive(true)}>
-          <Link to="/gaming">
+          <Link to="">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
           {active && <h4>Gaming</h4>}
           </Link>
         </li>
         <li onClick={()=> setActive(true)}>
-          <Link to="/gaming">
+          <Link to="">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
           {active && <h4>Gaming</h4>}
           </Link>
         </li>
         <li onClick={()=> setActive(true)}>
-          <Link to="/gaming">
+          <Link to="">
           <img className="imageProfile" style={{width: '25px', height: '25px'}} src={image2} alt="profile_image" />
           {active && <h4>Gaming</h4>}
           </Link>
