@@ -8,6 +8,7 @@ const SearchHeader = () => {
             type="text"
             placeholder='Search here...'
             id='search'
+            autoComplete='off'
         />
     </form>
   )

@@ -9,8 +9,9 @@ import { useEffect } from "react"
 // import { ref, listAll, getDownloadURL } from "firebase/storage";
 // import {useCollection} from "react-firebase-hooks/firestore"
 
-const PostSection = () => {
+const PostSection = ({handleLikes}) => {
    const [posts, setPosts]=useState([])
+   
    
    useEffect(()=>{
      db.collection("posts").orderBy("timestamp", "desc").onSnapshot((snapshot) => 
@@ -24,13 +25,15 @@ const PostSection = () => {
     <>
      {posts.map((post)=>(
       <div className='containerPost' key={post.id}>
-      <TopPost 
+      <TopPost
+        id={post.id}
         timestamp={post.data.timestamp}
         message={post.data.message}
       />
       
       <ImagePost postImage={post.data.postImage}/>
-      <ComentAndSharePost />
+      <ComentAndSharePost likes={post.data.likes}
+      handleLikes={handleLikes} id={post.id}/>
     </div>
     ))} 
     </>

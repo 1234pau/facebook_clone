@@ -16,6 +16,8 @@ const ModalPost = ({handleClose}) => {
     const [imageUpload, setImageUpload] = useState(null)
     //const filePickerRef = useRef(null)
     
+
+  
     const STYLE_IMAGE = {
        marginBottom: "20px",
        overflowY: "auto",

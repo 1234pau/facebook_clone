@@ -2,8 +2,8 @@ import './profile.css'
 
 const ContainerProfile = () => {
   return (
-    <div className='sds'>
-      sssssssssssssssssss
+    <div className='containerProfile'>
+      This is empty
     </div>
   )
 }

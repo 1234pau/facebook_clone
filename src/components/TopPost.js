@@ -1,10 +1,25 @@
 import image from './images/abstract-user-flat-4.svg'
-import { HiOutlineEllipsisHorizontal } from "react-icons/hi2";
+import { BsThreeDots } from "react-icons/bs";
 import './home.css'
 import { useStateValue } from "../StateProvider"
+import { useState } from 'react';
+import db from '../firebaseEnv';
+import {deleteDoc, doc} from "firebase/firestore"
+import { storage } from '../firebaseEnv';
 
-const TopPost = ({name, timestamp, message}) => {
+const TopPost = ({id, timestamp, message}) => {
   const [{user}, dispatch]=useStateValue()
+  const [showButton, setShowButton] = useState(true)
+
+  const handleDelete = ()=>{
+    //const uploadTask = storage.ref(`posts/${post.id}`)
+    deleteDoc(doc(db, 'posts', id))
+    console.log("delete post")
+  }
+  const handleShowButton =  (e) =>{
+    e.stopPropagation()
+    setShowButton(!showButton)
+  }
   return (
     <div className='topPost'>
       <div className='containerTopPost'>
@@ -18,7 +33,11 @@ const TopPost = ({name, timestamp, message}) => {
             </div>
             
         </div>
-        <HiOutlineEllipsisHorizontal role='button'/>
+        <div className='treeDotsButton' onClick={handleShowButton}>
+          <BsThreeDots role='button' className='buttonDots'/>
+          {!showButton && <button onClick={handleDelete} className="buttonTreeDots">Delete Post</button>}
+        </div>
+        
       </div>
         
         <div className='messageCon'>{message}</div>

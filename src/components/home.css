@@ -218,10 +218,43 @@ hr {
     padding: 10px;
 }
 
-.topPost svg {
+.buttonDots {
     color: var(--svgAndTextColor);
-    font-size: 30px;
+    font-size: 25px;
+}
+
+.treeDotsButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+}
+
+.treeDotsButton:hover {
+    background-color: #404142c0;
+    transition: all 0.3s;
+}
+
+.buttonTreeDots {
+    min-width: 110px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #242526;
+    border: 1px solid #4a4c4d;
+    color: white;
+    margin-right: 50px;
+    margin-top: 80px;
+    position: relative;
+    z-index: 10;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttonTreeDots:hover {
+    background-color: #373738d5;
 }
 
 .containerTopPost {
